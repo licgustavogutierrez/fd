@@ -55,72 +55,105 @@
 <body>
 
 <div class="container">
-    <h1>🖥️ Trabajo Práctico</h1>
+    <h1>🖥️ Trabajo Práctico N° 1</h1>
     <p>Procesamiento de la Información</p>
+ </div>
 
-    <!-- Pregunta 1 -->
-    <div class="question">
-        <p>1. ¿Cuál es un dispositivo de entrada?</p>
-        <input type="radio" name="q1" value="0"> Monitor<br>
-        <input type="radio" name="q1" value="1"> Teclado<br>
-        <input type="radio" name="q1" value="0"> Impresora<br>
-    </div>
+📌 Objetivos
+Comprender cómo una computadora procesa la información.
+Identificar las etapas del procesamiento.
+Reconocer los componentes principales involucrados.
+📖 Introducción
 
-    <!-- Pregunta 2 -->
-    <div class="question">
-        <p>2. ¿Qué componente procesa la información?</p>
-        <input type="radio" name="q2" value="1"> CPU<br>
-        <input type="radio" name="q2" value="0"> Mouse<br>
-        <input type="radio" name="q2" value="0"> Monitor<br>
-    </div>
+Las computadoras son máquinas que permiten procesar información de manera rápida y eficiente. Para hacerlo, siguen una serie de pasos que transforman datos en información útil. Este proceso es fundamental en todas las tareas digitales, desde escribir un texto hasta navegar por internet.
 
-    <!-- Pregunta 3 -->
-    <div class="question">
-        <p>3. ¿Qué es la memoria RAM?</p>
-        <input type="radio" name="q3" value="1"> Almacenamiento temporal<br>
-        <input type="radio" name="q3" value="0"> Dispositivo de salida<br>
-        <input type="radio" name="q3" value="0"> Dispositivo de entrada<br>
-    </div>
+🔄 Etapas del Procesamiento de la Información
+1. Entrada (Input)
 
-    <!-- Pregunta 4 -->
-    <div class="question">
-        <p>4. ¿Cuál es un dispositivo de salida?</p>
-        <input type="radio" name="q4" value="1"> Monitor<br>
-        <input type="radio" name="q4" value="0"> Teclado<br>
-        <input type="radio" name="q4" value="0"> Micrófono<br>
-    </div>
+Es el ingreso de datos a la computadora.
 
-    <!-- Pregunta 5 -->
-    <div class="question">
-        <p>5. ¿Qué etapa guarda información?</p>
-        <input type="radio" name="q5" value="1"> Almacenamiento<br>
-        <input type="radio" name="q5" value="0"> Entrada<br>
-        <input type="radio" name="q5" value="0"> Salida<br>
-    </div>
+📌 Ejemplos:
 
-    <button onclick="corregir()">Corregir</button>
+Teclado
+Mouse
+Micrófono
+Cámara
+2. Procesamiento (Process)
 
-    <div id="resultado"></div>
-</div>
+Es cuando la computadora analiza y transforma los datos.
 
-<script>
-function corregir() {
-    let total = 0;
-    let preguntas = 5;
+📌 Aquí interviene:
 
-    for (let i = 1; i <= preguntas; i++) {
-        let opciones = document.getElementsByName("q" + i);
-        for (let opcion of opciones) {
-            if (opcion.checked) {
-                total += parseInt(opcion.value);
-            }
-        }
-    }
+CPU (Unidad Central de Procesamiento)
+Unidad de Control
+Unidad Aritmético-Lógica (ALU)
+3. Salida (Output)
 
-    document.getElementById("resultado").innerHTML =
-        "Tu puntaje es: " + total + " / " + preguntas;
-}
-</script>
+Es el resultado del procesamiento.
 
+📌 Ejemplos:
+
+Monitor
+Impresora
+Parlantes
+4. Almacenamiento (Storage)
+
+Permite guardar datos e información.
+
+📌 Tipos:
+
+Disco rígido
+Memoria RAM
+Pendrive
+🧠 Esquema del Proceso
+
+Entrada → Procesamiento → Salida
+↓
+Almacenamiento
+
+📝 Actividades
+🔹 Actividad 1: Verdadero o Falso
+
+Indicar si las siguientes afirmaciones son verdaderas (V) o falsas (F):
+
+a) El teclado es un dispositivo de salida.
+b) La CPU procesa la información.
+c) El monitor permite ingresar datos.
+d) La memoria RAM almacena datos temporalmente.
+
+🔹 Actividad 2: Completar
+
+Completar las oraciones:
+
+La __________ permite ingresar datos a la computadora.
+La CPU está formada por la __________ y la ALU.
+Los resultados se muestran mediante dispositivos de __________.
+🔹 Actividad 3: Relacionar columnas
+Dispositivo	Función
+Teclado	a) Mostrar información
+Monitor	b) Ingresar datos
+Impresora	c) Imprimir resultados
+🔹 Actividad 4: Preguntas
+¿Qué es el procesamiento de la información?
+¿Qué función cumple la CPU?
+Nombrar dos dispositivos de entrada y dos de salida.
+¿Para qué sirve el almacenamiento?
+🔹 Actividad 5: Desarrollo
+
+Explicar con tus palabras cómo funciona una computadora desde que ingresás un dato hasta que obtenés un resultado.
+
+🎯 Actividad Extra (Opcional)
+
+Dibujar un esquema del proceso de la información en una computadora indicando:
+
+Entrada
+Procesamiento
+Salida
+Almacenamiento
+✅ Criterios de Evaluación
+Comprensión del tema
+Respuestas correctas
+Claridad en la explicación
+Presentación prolija
 </body>
 </html>
